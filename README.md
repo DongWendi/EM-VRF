@@ -6,7 +6,7 @@ EM-VRF Desktop (Mechanism-Informed Electrochemical‐Mechanical Volume-Response 
 
 ## Download the Windows application
 
-The ready-to-run application for 64-bit Windows 10 or 11 is attached to this repository's Releases as `EM-VRF-Desktop-2026.10.09-win64.zip`. Extract it, keep the `_internal` folder next to `EM-VRF Desktop.exe` and run the executable; no installation or Python environment is needed.
+The ready-to-run application for 64-bit Windows 10 or 11 is attached to this repository's Releases as `EM-VRF-Desktop.zip`. Extract it, keep the `_internal` folder next to `EM-VRF Desktop.exe` and run the executable; no installation or Python environment is needed.
 
 ## Run from source
 
