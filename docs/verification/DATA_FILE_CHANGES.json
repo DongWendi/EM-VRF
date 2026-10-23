@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-09",
+  "fitted_model_changed": false,
+  "spreadsheet_metadata_cleanup": {
+    "date": "2026-10-08",
+    "purpose": "Remove personal information and non-English text from Excel document properties and formatting metadata before public release. Cell values and text are unchanged.",
+    "changes": [
+      "docProps/core.xml: removed the creator and last-modified-by names.",
+      "docProps/app.xml: Excel part headings set to the English labels 'Worksheets' and 'Named Ranges'.",
+      "xl/workbook.xml: removed the last local save folder (x15ac:absPath); Excel regenerates it on save.",
+      "xl/styles.xml, xl/theme/theme1.xml, xl/sharedStrings.xml: localized font names replaced by the English names of the same fonts (DengXian, DengXian Light, Malgun Gothic, PMingLiU); built-in 'Normal' cell-style name written in English. In xl/sharedStrings.xml only rich-text run font names changed."
+    ],
+    "files": {
+      "Example.xlsx": {
+        "sha256_before": "9a32dbf37cf06f3e0f30dd4486330d7a66e16042102ba2b78cec3df2d12d7ee7",
+        "sha256_after": "68894d46ef562fe654aed29e5ed5e87e95c3b640f3f06e3aef3308c8be66f96e",
+        "changed_parts": [
+          "xl/workbook.xml",
+          "xl/theme/theme1.xml",
+          "xl/styles.xml",
+          "docProps/core.xml",
+          "docProps/app.xml"
+        ],
+        "cell_text_and_values_identical_in": [
+          "xl/worksheets/sheet1.xml",
+          "xl/sharedStrings.xml"
+        ],
+        "read_check_with_bundled_runtime": {
+          "pandas_read_excel_frames_equal": true,
+          "pandas_shape": [
+            2,
+            3
+          ],
+          "openpyxl_all_cell_values_equal": true,
+          "application_batch_loader_results_equal": true,
+          "application_batch_loader_rows": 2
+        }
+      },
+      "Supplementary Table 5.xlsx": {
+        "sha256_before": "62a71e98a304ca8bdf68dbfb9b50f69e7777ea05b5719469b0371df910b7fab4",
+        "sha256_after": "0d2a8425f28072c52c439fdbe3c0cfa1279dd16df3961e248b2336b23b37c7e3",
+        "changed_parts": [
+          "xl/workbook.xml",
+          "xl/theme/theme1.xml",
+          "xl/styles.xml",
+          "xl/sharedStrings.xml",
+          "docProps/core.xml",
+          "docProps/app.xml"
+        ],
+        "cell_text_and_values_identical_in": [
+          "xl/worksheets/sheet1.xml",
+          "xl/sharedStrings.xml"
+        ],
+        "read_check_with_bundled_runtime": {
+          "pandas_read_excel_frames_equal": true,
+          "pandas_shape": [
+            45,
+            10
+          ],
+          "openpyxl_all_cell_values_equal": true,
+          "application_batch_loader_results_equal": true,
+          "application_batch_loader_rows": 45
+        }
+      }
+    },
+    "recorded_dataset_hash_note": "The dataset SHA-256 recorded in _internal/data/model_meta.json (current_publication_dataset.sha256) and precision_revision/CE_TRAINING_AUDIT.json is 62a71e98a304ca8bdf68dbfb9b50f69e7777ea05b5719469b0371df910b7fab4, the hash of Supplementary Table 5.xlsx before this metadata cleanup. The cell data are identical; the current file hash is 0d2a8425f28072c52c439fdbe3c0cfa1279dd16df3961e248b2336b23b37c7e3."
+  },
+  "training_population_json": {
+    "file": "data/training_population.json (also _internal/data in the release)",
+    "sha256_before": "4fb78ece5f177d5fbdff2aca8f04e7e040c608987a28cd018fdf6e23a867aef7",
+    "sha256_after": "9544f98257ab432cef2f42ccbd65eec24c13fe175e9008172b2af77a9b44dcce",
+    "change": "Removed the provenance_status statement, which referred to a document not distributed with the software; documentation_revision set to 2026-10-09-release. The file is not read by the application."
+  },
+  "recorded_hash_note": "precision_revision/PRECISION_VERIFICATION.json records the earlier training_population.json hash (sha256_before above); _internal/data/model_meta.json and precision_revision/CE_TRAINING_AUDIT.json record the Supplementary Table 5.xlsx hash before its metadata cleanup."
+}

@@ -1,0 +1,1220 @@
+{
+  "scope": "Ce radius only counterfactual; original data files and workbook unchanged. App full-precision patch loaded in memory; only ELEMENTS[Ce].radius changed in memory. Regression comparison uses each stored ΔXNa with formula-derived descriptors and real predict_signed_delta_v; application comparison also applies current guards/phase gate.",
+  "source_workbook": "C:\\Users\\w\\Documents\\Codex\\2026-10-03\\new-chat\\work\\precision_fix\\release\\EM-VRF Desktop\\Supplementary Table 5.xlsx",
+  "workbook_sha256_before": "62a71e98a304ca8bdf68dbfb9b50f69e7777ea05b5719469b0371df910b7fab4",
+  "workbook_sha256_after": "62a71e98a304ca8bdf68dbfb9b50f69e7777ea05b5719469b0371df910b7fab4",
+  "workbook_unchanged": true,
+  "original_v103_workbook_sha256": "62a71e98a304ca8bdf68dbfb9b50f69e7777ea05b5719469b0371df910b7fab4",
+  "sheet": "Sheet1",
+  "table_range": "A1:J46",
+  "formula_range": "B2:B46",
+  "sample_id_range": "A2:A46",
+  "headers": [
+    "Sample ID",
+    "Formula",
+    "XNa",
+    "Ravg(Å)",
+    "ΦTM",
+    "Qch(mAh g−1)",
+    "ΔXNa",
+    "V1(Å³)",
+    "ΔV(%)",
+    "Reference"
+  ],
+  "sample_count": 45,
+  "unique_sample_ids": 45,
+  "unique_formula_strings": 45,
+  "Ce_detection": "Independent element-token regex [A-Z][a-z]? and membership in actual app parse_formula composition; no substring matching on references.",
+  "Ce_containing_count": 0,
+  "Ce_containing_rows": [],
+  "original_Ce": {
+    "symbol": "Ce",
+    "valence": 4.0,
+    "radius": 0.53,
+    "is_tm": true,
+    "atomic_weight": 140.116
+  },
+  "corrected_Ce": {
+    "symbol": "Ce",
+    "valence": 4.0,
+    "radius": 0.87,
+    "is_tm": true,
+    "atomic_weight": 140.116
+  },
+  "descriptor_keys_compared": [
+    "XNa",
+    "Ravg",
+    "PhiTM",
+    "radius_std",
+    "phi_std",
+    "mixing_entropy",
+    "n_tm_elements",
+    "TM_sum",
+    "molar_mass",
+    "charge_gap",
+    "oxygen"
+  ],
+  "all_descriptor_values_identical": true,
+  "all_45_regression_predictions_identical": true,
+  "max_absolute_prediction_change": 0.0,
+  "all_application_outcomes_identical": true,
+  "stored_descriptor_columns": [
+    "XNa",
+    "Ravg(Å)",
+    "ΦTM",
+    "ΔXNa"
+  ],
+  "records": [
+    {
+      "excel_row": 2,
+      "sample_id": 1,
+      "formula": "Na0.83Li0.1Ni0.25Co0.2Mn0.15Ti0.15Sn0.15O2",
+      "element_tokens": [
+        "Co",
+        "Li",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Sn",
+        "Ti"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -2.4653394086933447,
+      "direct_regression_delta_v_after": -2.4653394086933447,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": false,
+        "phase_code": "NOT_ASSESSABLE",
+        "DeltaV_pred": null
+      }
+    },
+    {
+      "excel_row": 3,
+      "sample_id": 2,
+      "formula": "Na0.9Ni0.2Fe0.2Co0.2Mn0.2Ti0.15Cu0.05O2",
+      "element_tokens": [
+        "Co",
+        "Cu",
+        "Fe",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Ti"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -0.559024531881938,
+      "direct_regression_delta_v_after": -0.559024531881938,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -0.559024531881938
+      }
+    },
+    {
+      "excel_row": 4,
+      "sample_id": 3,
+      "formula": "NaNi0.12Cu0.12Mg0.12Fe0.15Co0.15Mn0.1Ti0.1Sn0.1Sb0.04O2",
+      "element_tokens": [
+        "Co",
+        "Cu",
+        "Fe",
+        "Mg",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Sb",
+        "Sn",
+        "Ti"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -1.992247236594145,
+      "direct_regression_delta_v_after": -1.992247236594145,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -1.992247236594145
+      }
+    },
+    {
+      "excel_row": 5,
+      "sample_id": 4,
+      "formula": "Na 2/3Li1/6Fe1/6Co1/6Ni1/6Mn1/3O2",
+      "element_tokens": [
+        "Co",
+        "Fe",
+        "Li",
+        "Mn",
+        "Na",
+        "Ni",
+        "O"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -1.7491094363457371,
+      "direct_regression_delta_v_after": -1.7491094363457371,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": false,
+        "phase_code": "NOT_ASSESSABLE",
+        "DeltaV_pred": null
+      }
+    },
+    {
+      "excel_row": 6,
+      "sample_id": 5,
+      "formula": "NaNi0.25Mg0.05Cu0.1Fe0.2Mn0.2Ti0.1Sn0.1O2",
+      "element_tokens": [
+        "Cu",
+        "Fe",
+        "Mg",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Sn",
+        "Ti"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -3.82560209725506,
+      "direct_regression_delta_v_after": -3.82560209725506,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -3.82560209725506
+      }
+    },
+    {
+      "excel_row": 7,
+      "sample_id": 6,
+      "formula": "NaNi0.3Cu0.1Fe0.2Mn0.3Sn0.1O2",
+      "element_tokens": [
+        "Cu",
+        "Fe",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Sn"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -3.42309673511003,
+      "direct_regression_delta_v_after": -3.42309673511003,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -3.42309673511003
+      }
+    },
+    {
+      "excel_row": 8,
+      "sample_id": 7,
+      "formula": "Na0.8[Ni1/5Fe1/5Co1/5Mn1/5Ti1/5]O2",
+      "element_tokens": [
+        "Co",
+        "Fe",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Ti"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -1.7868958955579708,
+      "direct_regression_delta_v_after": -1.7868958955579708,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -1.7868958955579708
+      }
+    },
+    {
+      "excel_row": 9,
+      "sample_id": 8,
+      "formula": "Na0.9Ni0.25Co0.25Fe0.25Mn0.25O2",
+      "element_tokens": [
+        "Co",
+        "Fe",
+        "Mn",
+        "Na",
+        "Ni",
+        "O"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -2.2932215941736462,
+      "direct_regression_delta_v_after": -2.2932215941736462,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": false,
+        "phase_code": "NOT_ASSESSABLE",
+        "DeltaV_pred": null
+      }
+    },
+    {
+      "excel_row": 10,
+      "sample_id": 9,
+      "formula": "Na0.9Ni1/3Fe1/3Mn1/3O2",
+      "element_tokens": [
+        "Fe",
+        "Mn",
+        "Na",
+        "Ni",
+        "O"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -3.1425169001945643,
+      "direct_regression_delta_v_after": -3.1425169001945643,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": false,
+        "phase_code": "NOT_ASSESSABLE",
+        "DeltaV_pred": null
+      }
+    },
+    {
+      "excel_row": 11,
+      "sample_id": 10,
+      "formula": "NaFe0.2Cu0.1Ni0.2Mn0.3Ti0.2O2",
+      "element_tokens": [
+        "Cu",
+        "Fe",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Ti"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -1.0372961555121183,
+      "direct_regression_delta_v_after": -1.0372961555121183,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": false,
+        "phase_code": "NOT_ASSESSABLE",
+        "DeltaV_pred": null
+      }
+    },
+    {
+      "excel_row": 12,
+      "sample_id": 11,
+      "formula": "NaMn0.4Ni0.3Fe0.15Li0.1Ti0.05O2",
+      "element_tokens": [
+        "Fe",
+        "Li",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Ti"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -0.885788538887577,
+      "direct_regression_delta_v_after": -0.885788538887577,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -0.885788538887577
+      }
+    },
+    {
+      "excel_row": 13,
+      "sample_id": 12,
+      "formula": "Na0.9Li0.1Ni0.3Mn0.3Ti0.3O2",
+      "element_tokens": [
+        "Li",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Ti"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -3.699026452734148,
+      "direct_regression_delta_v_after": -3.699026452734148,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -3.699026452734148
+      }
+    },
+    {
+      "excel_row": 14,
+      "sample_id": 13,
+      "formula": "NaNi0.4Mn0.35Fe0.1Ti0.05Li0.05Sb0.05O2",
+      "element_tokens": [
+        "Fe",
+        "Li",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Sb",
+        "Ti"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -2.7246754668223896,
+      "direct_regression_delta_v_after": -2.7246754668223896,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -2.7246754668223896
+      }
+    },
+    {
+      "excel_row": 15,
+      "sample_id": 14,
+      "formula": "NaNi0.4Mn0.3Fe0.1Ti0.1Li0.05Sb0.05O2",
+      "element_tokens": [
+        "Fe",
+        "Li",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Sb",
+        "Ti"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -3.880216684750711,
+      "direct_regression_delta_v_after": -3.880216684750711,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -3.880216684750711
+      }
+    },
+    {
+      "excel_row": 16,
+      "sample_id": 15,
+      "formula": "NaNi0.4Mn0.2Fe0.1Ti0.2Li0.05Sb0.05O2",
+      "element_tokens": [
+        "Fe",
+        "Li",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Sb",
+        "Ti"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -3.660953248138504,
+      "direct_regression_delta_v_after": -3.660953248138504,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -3.660953248138504
+      }
+    },
+    {
+      "excel_row": 17,
+      "sample_id": 16,
+      "formula": "Na0.9Ni0.32Zn0.08Fe0.1Mn0.3Ti0.2O2",
+      "element_tokens": [
+        "Fe",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Ti",
+        "Zn"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -1.3096099690511074,
+      "direct_regression_delta_v_after": -1.3096099690511074,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -1.3096099690511074
+      }
+    },
+    {
+      "excel_row": 18,
+      "sample_id": 17,
+      "formula": "Na0.85Li0.1Al0.02Sn0.08Cu0.1Ti0.1Ni0.3Mn0.3O2",
+      "element_tokens": [
+        "Al",
+        "Cu",
+        "Li",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Sn",
+        "Ti"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -1.838755912612524,
+      "direct_regression_delta_v_after": -1.838755912612524,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": false,
+        "phase_code": "NOT_ASSESSABLE",
+        "DeltaV_pred": null
+      }
+    },
+    {
+      "excel_row": 19,
+      "sample_id": 18,
+      "formula": "Na1.0Li0.1Ni0.3Fe0.1Mn0.25Ti0.25O2",
+      "element_tokens": [
+        "Fe",
+        "Li",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Ti"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -1.3679894471586254,
+      "direct_regression_delta_v_after": -1.3679894471586254,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -1.3679894471586254
+      }
+    },
+    {
+      "excel_row": 20,
+      "sample_id": 19,
+      "formula": "NaLi1/9Ni2/9Fe2/9Mn4/9O2",
+      "element_tokens": [
+        "Fe",
+        "Li",
+        "Mn",
+        "Na",
+        "Ni",
+        "O"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -1.0550531407857688,
+      "direct_regression_delta_v_after": -1.0550531407857688,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -1.0550531407857688
+      }
+    },
+    {
+      "excel_row": 21,
+      "sample_id": 20,
+      "formula": "Na0.83Mn0.35Fe0.15Ni0.15Cu0.10Co0.20Sn0.05O2",
+      "element_tokens": [
+        "Co",
+        "Cu",
+        "Fe",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Sn"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -0.6050558478268351,
+      "direct_regression_delta_v_after": -0.6050558478268351,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -0.6050558478268351
+      }
+    },
+    {
+      "excel_row": 22,
+      "sample_id": 21,
+      "formula": "Na0.9Cu0.22Fe0.30Mn0.48O2",
+      "element_tokens": [
+        "Cu",
+        "Fe",
+        "Mn",
+        "Na",
+        "O"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -2.274564867351684,
+      "direct_regression_delta_v_after": -2.274564867351684,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": false,
+        "phase_code": "NOT_ASSESSABLE",
+        "DeltaV_pred": null
+      }
+    },
+    {
+      "excel_row": 23,
+      "sample_id": 22,
+      "formula": "Na0.9Cu0.22Fe0.30Mn0.43Ti0.05O2",
+      "element_tokens": [
+        "Cu",
+        "Fe",
+        "Mn",
+        "Na",
+        "O",
+        "Ti"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -2.2664341618464388,
+      "direct_regression_delta_v_after": -2.2664341618464388,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": false,
+        "phase_code": "NOT_ASSESSABLE",
+        "DeltaV_pred": null
+      }
+    },
+    {
+      "excel_row": 24,
+      "sample_id": 23,
+      "formula": "Na0.9Cu0.12Ni0.10Fe0.30Mn0.43Ti0.05O2",
+      "element_tokens": [
+        "Cu",
+        "Fe",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Ti"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -2.195592488865199,
+      "direct_regression_delta_v_after": -2.195592488865199,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": false,
+        "phase_code": "NOT_ASSESSABLE",
+        "DeltaV_pred": null
+      }
+    },
+    {
+      "excel_row": 25,
+      "sample_id": 24,
+      "formula": "Na[Ni0.5Mn0.5]O2",
+      "element_tokens": [
+        "Mn",
+        "Na",
+        "Ni",
+        "O"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -1.883254992129217,
+      "direct_regression_delta_v_after": -1.883254992129217,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -1.883254992129217
+      }
+    },
+    {
+      "excel_row": 26,
+      "sample_id": 25,
+      "formula": "NaZn0.03Ni 1/3-0.03 Fe1/3 Mn1/3 O2",
+      "element_tokens": [
+        "Fe",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Zn"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -4.467334820966318,
+      "direct_regression_delta_v_after": -4.467334820966318,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -4.467334820966318
+      }
+    },
+    {
+      "excel_row": 27,
+      "sample_id": 26,
+      "formula": "NaNi0.4Fe0.2Mn0.4O2",
+      "element_tokens": [
+        "Fe",
+        "Mn",
+        "Na",
+        "Ni",
+        "O"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -4.658089758765676,
+      "direct_regression_delta_v_after": -4.658089758765676,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -4.658089758765676
+      }
+    },
+    {
+      "excel_row": 28,
+      "sample_id": 27,
+      "formula": "Na0.87Ni0.4Cu0.05Fe0.1Mn0.25Ru0.1Ti0.1O2",
+      "element_tokens": [
+        "Cu",
+        "Fe",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Ru",
+        "Ti"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -1.7520016514729222,
+      "direct_regression_delta_v_after": -1.7520016514729222,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": false,
+        "phase_code": "NOT_ASSESSABLE",
+        "DeltaV_pred": null
+      }
+    },
+    {
+      "excel_row": 29,
+      "sample_id": 28,
+      "formula": "NaNi0.3Cu0.1Mn0.6O2",
+      "element_tokens": [
+        "Cu",
+        "Mn",
+        "Na",
+        "Ni",
+        "O"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -0.8953660253136839,
+      "direct_regression_delta_v_after": -0.8953660253136839,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": false,
+        "phase_code": "NOT_ASSESSABLE",
+        "DeltaV_pred": null
+      }
+    },
+    {
+      "excel_row": 30,
+      "sample_id": 29,
+      "formula": "NaLi0.08Ni0.42Mn0.5O2",
+      "element_tokens": [
+        "Li",
+        "Mn",
+        "Na",
+        "Ni",
+        "O"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -1.661486796111307,
+      "direct_regression_delta_v_after": -1.661486796111307,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": false,
+        "phase_code": "NOT_ASSESSABLE",
+        "DeltaV_pred": null
+      }
+    },
+    {
+      "excel_row": 31,
+      "sample_id": 30,
+      "formula": "NaLi0.08Ni0.42Mn0.47Sn0.03O2",
+      "element_tokens": [
+        "Li",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Sn"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -2.3020442359854,
+      "direct_regression_delta_v_after": -2.3020442359854,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": false,
+        "phase_code": "NOT_ASSESSABLE",
+        "DeltaV_pred": null
+      }
+    },
+    {
+      "excel_row": 32,
+      "sample_id": 31,
+      "formula": "Na0.95Li0.06Ni0.25Mn0.39Fe0.1Cu0.1Ti0.1O2",
+      "element_tokens": [
+        "Cu",
+        "Fe",
+        "Li",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Ti"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -1.627957472393767,
+      "direct_regression_delta_v_after": -1.627957472393767,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -1.627957472393767
+      }
+    },
+    {
+      "excel_row": 33,
+      "sample_id": 32,
+      "formula": "Na(Ni1/3Fe1/6Mn1/3Mg1/12Sn1/12)O2",
+      "element_tokens": [
+        "Fe",
+        "Mg",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Sn"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -1.5071665855091454,
+      "direct_regression_delta_v_after": -1.5071665855091454,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -1.5071665855091454
+      }
+    },
+    {
+      "excel_row": 34,
+      "sample_id": 33,
+      "formula": "NaNi0.323Fe0.162Mn0.323Mg0.0808Sn0.0808B0.03O2",
+      "element_tokens": [
+        "B",
+        "Fe",
+        "Mg",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Sn"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -0.5238204066001773,
+      "direct_regression_delta_v_after": -0.5238204066001773,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -0.5238204066001773
+      }
+    },
+    {
+      "excel_row": 35,
+      "sample_id": 34,
+      "formula": "Na0.8Ni0.2Fe0.25Al0.05Mg0.05Ti0.05Mn0.4O2",
+      "element_tokens": [
+        "Al",
+        "Fe",
+        "Mg",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Ti"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -0.9536264474249201,
+      "direct_regression_delta_v_after": -0.9536264474249201,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -0.9536264474249201
+      }
+    },
+    {
+      "excel_row": 36,
+      "sample_id": 35,
+      "formula": "Na0.94Cr0.97Nb0.03O2",
+      "element_tokens": [
+        "Cr",
+        "Na",
+        "Nb",
+        "O"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -0.21719928496488405,
+      "direct_regression_delta_v_after": -0.21719928496488405,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -0.21719928496488405
+      }
+    },
+    {
+      "excel_row": 37,
+      "sample_id": 36,
+      "formula": "Na0.9Cu0.12Ni0.33Mn0.4Ti0.15O2",
+      "element_tokens": [
+        "Cu",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Ti"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -2.374412383028826,
+      "direct_regression_delta_v_after": -2.374412383028826,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -2.374412383028826
+      }
+    },
+    {
+      "excel_row": 38,
+      "sample_id": 37,
+      "formula": "NaLi1/9Ni1/3Mn4/9Ti1/9O2",
+      "element_tokens": [
+        "Li",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Ti"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -3.396437330498803,
+      "direct_regression_delta_v_after": -3.396437330498803,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -3.396437330498803
+      }
+    },
+    {
+      "excel_row": 39,
+      "sample_id": 38,
+      "formula": "NaNi0.25Fe0.455Al0.045Mn0.25O2",
+      "element_tokens": [
+        "Al",
+        "Fe",
+        "Mn",
+        "Na",
+        "Ni",
+        "O"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -0.6910695106854146,
+      "direct_regression_delta_v_after": -0.6910695106854146,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -0.6910695106854146
+      }
+    },
+    {
+      "excel_row": 40,
+      "sample_id": 39,
+      "formula": "Na2/3Fe2/3Mn1/3O2",
+      "element_tokens": [
+        "Fe",
+        "Mn",
+        "Na",
+        "O"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -2.09741036451981,
+      "direct_regression_delta_v_after": -2.09741036451981,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": false,
+        "phase_code": "P2",
+        "DeltaV_pred": null
+      }
+    },
+    {
+      "excel_row": 41,
+      "sample_id": 40,
+      "formula": "Na[Ni2/3Ru1/3]O2",
+      "element_tokens": [
+        "Na",
+        "Ni",
+        "O",
+        "Ru"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -2.675065286812229,
+      "direct_regression_delta_v_after": -2.675065286812229,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": false,
+        "phase_code": "NOT_ASSESSABLE",
+        "DeltaV_pred": null
+      }
+    },
+    {
+      "excel_row": 42,
+      "sample_id": 41,
+      "formula": "Na0.9[Ni0.4Mn0.4Ti0.2]O2",
+      "element_tokens": [
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Ti"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -1.7103336323000582,
+      "direct_regression_delta_v_after": -1.7103336323000582,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": false,
+        "phase_code": "NOT_ASSESSABLE",
+        "DeltaV_pred": null
+      }
+    },
+    {
+      "excel_row": 43,
+      "sample_id": 42,
+      "formula": "Na0.85Li0.1Ni0.175Mn0.525Fe0.2O2",
+      "element_tokens": [
+        "Fe",
+        "Li",
+        "Mn",
+        "Na",
+        "Ni",
+        "O"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -0.8492289302323426,
+      "direct_regression_delta_v_after": -0.8492289302323426,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -0.8492289302323426
+      }
+    },
+    {
+      "excel_row": 44,
+      "sample_id": 43,
+      "formula": "Na0.8(Ni0.43Cu0.17Sb0.4)O2",
+      "element_tokens": [
+        "Cu",
+        "Na",
+        "Ni",
+        "O",
+        "Sb"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -1.6445772343422382,
+      "direct_regression_delta_v_after": -1.6445772343422382,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": true,
+        "phase_code": "O3",
+        "DeltaV_pred": -1.6445772343422382
+      }
+    },
+    {
+      "excel_row": 45,
+      "sample_id": 44,
+      "formula": "Na0.67Mn0.4Ni0.3Fe0.15Li0.1Ti0.05O2",
+      "element_tokens": [
+        "Fe",
+        "Li",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Ti"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -0.4300236147856764,
+      "direct_regression_delta_v_after": -0.4300236147856764,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": false,
+        "phase_code": "NOT_ASSESSABLE",
+        "DeltaV_pred": null
+      }
+    },
+    {
+      "excel_row": 46,
+      "sample_id": 45,
+      "formula": "Na0.67Mn0.4Ni0.3Li0.15Ti0.15O2",
+      "element_tokens": [
+        "Li",
+        "Mn",
+        "Na",
+        "Ni",
+        "O",
+        "Ti"
+      ],
+      "contains_Ce": false,
+      "descriptor_changes": {},
+      "direct_regression_delta_v_before": -0.7086493580432407,
+      "direct_regression_delta_v_after": -0.7086493580432407,
+      "regression_prediction_identical": true,
+      "application_outcome_identical": true,
+      "application_outcome": {
+        "kind": "result",
+        "prediction_allowed": false,
+        "phase_code": "NOT_ASSESSABLE",
+        "DeltaV_pred": null
+      }
+    }
+  ]
+}

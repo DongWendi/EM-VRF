@@ -1,0 +1,21 @@
+{
+  "application_version": "2026.10.03-full-precision-r3",
+  "executable_changed": true,
+  "fitted_model_unchanged": true,
+  "training_data_unchanged": true,
+  "element_database_correction": {
+    "element": "Ce",
+    "valence": 4,
+    "coordination_number": 6,
+    "radius_kind": "Shannon effective ionic radius",
+    "old_radius_A": 0.53,
+    "new_radius_A": 0.87,
+    "only_element_table_change": true,
+    "new_element_table_sha256": "8d55bc2de96cefa0621fc21a60af0016947587e85bb972358964a9764da42780",
+    "source_doi": "10.1107/S0567739476001551"
+  },
+  "self_test_passed": true,
+  "gui_and_export_tests_passed": true,
+  "detailed_verification": "precision_revision/PRECISION_VERIFICATION.json",
+  "build_provenance": "precision_revision/BUILD_PROVENANCE.json"
+}

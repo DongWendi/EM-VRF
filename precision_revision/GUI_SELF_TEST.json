@@ -1,0 +1,42 @@
+{
+  "application_version": "2026.10.03-full-precision-r3",
+  "gui_passed": true,
+  "startup_defaults": {
+    "formula": "Na0.92Ni0.4Mn0.4Al0.05Ti0.1Li0.03Sb0.02O2",
+    "input_mode": "Qch",
+    "Qch": 149.24,
+    "DeltaXNa": 0.5979312185361169,
+    "formula_page_visible": true
+  },
+  "formula_and_mode_switch_cases": [
+    {
+      "name": "NMTS",
+      "dx_internal": 0.5979312185361169,
+      "dx_display": "0.60",
+      "prediction": -1.361105620589903
+    },
+    {
+      "name": "NMTS-A",
+      "dx_internal": 0.5565773122513422,
+      "dx_display": "0.56",
+      "prediction": -0.4934918803431927
+    },
+    {
+      "name": "NMTS-M",
+      "dx_internal": 0.5582851652141481,
+      "dx_display": "0.56",
+      "prediction": -0.6035408535903892
+    },
+    {
+      "name": "NMTS-L",
+      "dx_internal": 0.6123154139837437,
+      "dx_display": "0.61",
+      "prediction": -2.0087560879279645
+    }
+  ],
+  "text_edit_and_focus": "passed",
+  "adjacent_float_signal": "passed",
+  "designer_fractional_stoichiometry": "passed",
+  "gui_physical_guard": "passed",
+  "batch_import_and_csv_xlsx_export": "passed"
+}

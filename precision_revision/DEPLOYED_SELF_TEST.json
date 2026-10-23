@@ -1,0 +1,38 @@
+{
+  "application_version": "2026.10.03-full-precision-r3",
+  "passed": true,
+  "ce_radius_A": 0.87,
+  "ce_descriptor_check": {
+    "formula": "Na0.92Ni0.4Mn0.38Ce0.02Al0.05Ti0.1Li0.03Sb0.02O2",
+    "Ravg": 0.6168500000000001,
+    "PhiTM": 5.266970048591748
+  },
+  "full_precision_cases": [
+    {
+      "name": "NMTS",
+      "Qch": 149.24,
+      "DeltaXNa": 0.5979312185361169,
+      "DeltaV_pred": -1.361105620589903
+    },
+    {
+      "name": "NMTS-A",
+      "Qch": 139.2,
+      "DeltaXNa": 0.5565773122513422,
+      "DeltaV_pred": -0.4934918803431927
+    },
+    {
+      "name": "NMTS-M",
+      "Qch": 140.6,
+      "DeltaXNa": 0.5582851652141481,
+      "DeltaV_pred": -0.6035408535903892
+    },
+    {
+      "name": "NMTS-L",
+      "Qch": 150.2,
+      "DeltaXNa": 0.6123154139837437,
+      "DeltaV_pred": -2.0087560879279645
+    }
+  ],
+  "physical_guards": "passed",
+  "phase_gate": "passed"
+}

@@ -1,0 +1,17 @@
+{
+  "application_version": "2026.10.03-full-precision-r3",
+  "method": "Preserved original PE, runtime, PYZ and model; replaced main with original code plus source-based precision correction.",
+  "source_archive_sha256": "4c607e8e0cc44bfa08a1e9f660a3e5ba306be9ecbf415c2cb09e3f15e2fba9f1",
+  "original_exe_sha256": "940d7332e7abce6a154c2708c626177506c10868c7100c5b3fbc72bbb818ecaf",
+  "revised_exe_sha256": "fad96fff7c93024c09ad46469ef32a0b36d7a9db5b359a02b3ca4ea4003efe82",
+  "original_main_sha256": "c215b4227660be388d85af7b447c0685f2fd47630a4ceb5c20cec32c3c7087bc",
+  "revised_main_sha256": "aff619e15508c7d9970f01a1743be88c5d67948275f759af815c575ec458edac",
+  "patch_source_sha256": "6716a145582463e4bca3054c08d0f4ae53a08c20f2f507d5332712557f4aec7d",
+  "all_other_archive_entries_unchanged": true,
+  "pe_resources_and_bootloader_unchanged_except_checksum": true,
+  "pe_checksum_valid": true,
+  "python_version": 310,
+  "archive_options": [
+    "pyi-contents-directory _internal"
+  ]
+}

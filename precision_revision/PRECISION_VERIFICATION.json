@@ -1,0 +1,95 @@
+{
+  "application_version": "2026.10.03-full-precision-r3",
+  "verified_native_executable": true,
+  "four_case_comparison": [
+    {
+      "sample": "NMTS",
+      "delta_x_na": 0.5979312185361169,
+      "prediction_percent": -1.361105620589903,
+      "v914_full_precision_reference": -1.361105620589903,
+      "difference": 0.0
+    },
+    {
+      "sample": "NMTS-A",
+      "delta_x_na": 0.5565773122513422,
+      "prediction_percent": -0.4934918803431927,
+      "v914_full_precision_reference": -0.4934918803431927,
+      "difference": 0.0
+    },
+    {
+      "sample": "NMTS-M",
+      "delta_x_na": 0.5582851652141481,
+      "prediction_percent": -0.6035408535903892,
+      "v914_full_precision_reference": -0.6035408535903892,
+      "difference": 0.0
+    },
+    {
+      "sample": "NMTS-L",
+      "delta_x_na": 0.6123154139837437,
+      "prediction_percent": -2.0087560879279645,
+      "v914_full_precision_reference": -2.0087560879279645,
+      "difference": 0.0
+    }
+  ],
+  "gui_self_test": {
+    "application_version": "2026.10.03-full-precision-r3",
+    "gui_passed": true,
+    "startup_defaults": {
+      "formula": "Na0.92Ni0.4Mn0.4Al0.05Ti0.1Li0.03Sb0.02O2",
+      "input_mode": "Qch",
+      "Qch": 149.24,
+      "DeltaXNa": 0.5979312185361169,
+      "formula_page_visible": true
+    },
+    "formula_and_mode_switch_cases": [
+      {
+        "name": "NMTS",
+        "dx_internal": 0.5979312185361169,
+        "dx_display": "0.60",
+        "prediction": -1.361105620589903
+      },
+      {
+        "name": "NMTS-A",
+        "dx_internal": 0.5565773122513422,
+        "dx_display": "0.56",
+        "prediction": -0.4934918803431927
+      },
+      {
+        "name": "NMTS-M",
+        "dx_internal": 0.5582851652141481,
+        "dx_display": "0.56",
+        "prediction": -0.6035408535903892
+      },
+      {
+        "name": "NMTS-L",
+        "dx_internal": 0.6123154139837437,
+        "dx_display": "0.61",
+        "prediction": -2.0087560879279645
+      }
+    ],
+    "text_edit_and_focus": "passed",
+    "adjacent_float_signal": "passed",
+    "designer_fractional_stoichiometry": "passed",
+    "gui_physical_guard": "passed",
+    "batch_import_and_csv_xlsx_export": "passed"
+  },
+  "core_self_test_passed": true,
+  "unchanged_model_and_data": {
+    "_internal\\data\\EM-VRF-ΔV.pkl": "b7e5beda9f45b7edec6c9a3dc280e609daa5743255baacd58825e0f87d2fcfad",
+    "_internal\\data\\model_meta.json": "35b639bb3fc6ad8fbc0e9e3df1e100e1d91af1d3835775fb42912eedc71ca1be",
+    "_internal\\data\\training_domain.json": "a5a863e6b4a42a3e842885907501311236a273c4329097c12218cc063d2c611b",
+    "_internal\\data\\training_population.json": "4fb78ece5f177d5fbdff2aca8f04e7e040c608987a28cd018fdf6e23a867aef7"
+  },
+  "element_database_correction": {
+    "element": "Ce",
+    "valence": 4,
+    "coordination_number": 6,
+    "radius_kind": "Shannon effective ionic radius",
+    "old_radius_A": 0.53,
+    "new_radius_A": 0.87,
+    "only_element_table_change": true,
+    "new_element_table_sha256": "8d55bc2de96cefa0621fc21a60af0016947587e85bb972358964a9764da42780",
+    "source_doi": "10.1107/S0567739476001551"
+  },
+  "scope": "Ce4+ VI effective ionic radius correction, precision handling, GUI value linkage, physical boundaries, batch import and full-precision export. No retraining or new cross-validation."
+}

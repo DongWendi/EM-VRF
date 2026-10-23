@@ -1,0 +1,7 @@
+{
+  "version": "2026.9.14-unified-45-literature-only",
+  "training_rows": 45,
+  "DeltaV_training_rows": 45,
+  "population_definition": "The dataset used in this study comprises the 45 literature records in Supplementary Table 5. All 45 records are used in model development and evaluation.",
+  "documentation_revision": "2026-10-09-release"
+}

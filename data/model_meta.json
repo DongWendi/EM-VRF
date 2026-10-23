@@ -1,0 +1,129 @@
+{
+  "version": "2026.9.14-unified-45-literature-only",
+  "source_file": "literature_dataset.xlsx",
+  "source_sha256": "2e124136b299494e8534b90c61f807dce333b26bac57c3480a7f1a3e684515f5",
+  "sample_count_DeltaV_fit": 45,
+  "framework": "Signed DeltaV prediction uses Ravg, PhiTM and DeltaXNa with StandardScaler + RBF-SVR.",
+  "DeltaV": {
+    "features": [
+      "Ravg",
+      "PhiTM",
+      "DeltaXNa"
+    ],
+    "target": "signed DeltaV (%)",
+    "unified_literature_rows": 45,
+    "fixed_model_repeated_20x5_cv_metrics": {
+      "R2": 0.7104137666236077,
+      "RMSE": 0.6987608752326937,
+      "MAE": 0.5768727056218016,
+      "Pearson_r": 0.8484825865212009,
+      "n": 45
+    },
+    "nested_model_selection_10x5_cv_metrics": {
+      "R2": 0.7231703193188883,
+      "RMSE": 0.683196998919927,
+      "MAE": 0.5394335754687711,
+      "Pearson_r": 0.8506952253891601,
+      "n": 45
+    },
+    "fixed_model_seed_sensitivity_10x5": {
+      "17": {
+        "R2": 0.7121115681539806,
+        "RMSE": 0.6967094979189665,
+        "MAE": 0.5789748484863481,
+        "Pearson_r": 0.8490933404148325,
+        "n": 45
+      },
+      "42": {
+        "R2": 0.687007700635057,
+        "RMSE": 0.7264512081643228,
+        "MAE": 0.5969792583082795,
+        "Pearson_r": 0.8354155040420277,
+        "n": 45
+      },
+      "2026": {
+        "R2": 0.7065936093627714,
+        "RMSE": 0.7033547237335415,
+        "MAE": 0.5807196766598998,
+        "Pearson_r": 0.8445205975990723,
+        "n": 45
+      },
+      "20260912": {
+        "R2": 0.7004404258498462,
+        "RMSE": 0.7106916719976075,
+        "MAE": 0.5818520254332876,
+        "Pearson_r": 0.8429856995779347,
+        "n": 45
+      }
+    },
+    "apparent_training_metrics": {
+      "R2": 0.867809732928942,
+      "RMSE": 0.4721058305935841,
+      "MAE": 0.30607808564629935,
+      "Pearson_r": 0.9344585965785152,
+      "n": 45
+    },
+    "overfitting_audit": {
+      "apparent_minus_fixed_cv_R2": 0.15739596630533437,
+      "apparent_minus_nested_cv_R2": 0.14463941361005372,
+      "fixed_cv_to_apparent_RMSE_ratio": 1.4800937204146232
+    },
+    "hyperparameters": {
+      "pipeline": "StandardScaler + RBF-SVR",
+      "kernel": "rbf",
+      "C": 3.0,
+      "epsilon": 0.001,
+      "gamma": "scale",
+      "literature_rows": 45,
+      "training_inputs": "literature_only"
+    },
+    "nested_selected_parameter_counts": {
+      "{\"C\": 10.0, \"epsilon\": 0.001, \"gamma\": 0.3, \"kernel\": \"rbf\"}": 2,
+      "{\"C\": 3.0, \"epsilon\": 0.1, \"gamma\": 0.5, \"kernel\": \"rbf\"}": 4,
+      "{\"C\": 10.0, \"epsilon\": 0.001, \"gamma\": 0.5, \"kernel\": \"rbf\"}": 3,
+      "{\"C\": 10.0, \"epsilon\": 0.05, \"gamma\": 0.5, \"kernel\": \"rbf\"}": 1,
+      "{\"C\": 10.0, \"epsilon\": 0.2, \"gamma\": 0.5, \"kernel\": \"rbf\"}": 4,
+      "{\"C\": 3.0, \"epsilon\": 0.001, \"gamma\": 0.5, \"kernel\": \"rbf\"}": 12,
+      "{\"C\": 10.0, \"epsilon\": 0.2, \"gamma\": 0.3, \"kernel\": \"rbf\"}": 2,
+      "{\"C\": 3.0, \"epsilon\": 0.001, \"gamma\": \"scale\", \"kernel\": \"rbf\"}": 2,
+      "{\"C\": 3.0, \"epsilon\": 0.05, \"gamma\": 0.5, \"kernel\": \"rbf\"}": 1,
+      "{\"C\": 3.0, \"epsilon\": 0.2, \"gamma\": 0.5, \"kernel\": \"rbf\"}": 4,
+      "{\"C\": 3.0, \"epsilon\": 0.2, \"gamma\": 0.3, \"kernel\": \"rbf\"}": 1,
+      "{\"C\": 30.0, \"epsilon\": 0.001, \"gamma\": 0.3, \"kernel\": \"rbf\"}": 2,
+      "{\"C\": 10.0, \"epsilon\": 0.2, \"gamma\": \"scale\", \"kernel\": \"rbf\"}": 2,
+      "{\"C\": 30.0, \"epsilon\": 0.2, \"gamma\": 0.5, \"kernel\": \"rbf\"}": 2,
+      "{\"C\": 10.0, \"epsilon\": 0.05, \"gamma\": \"scale\", \"kernel\": \"rbf\"}": 2,
+      "{\"C\": 3.0, \"epsilon\": 0.2, \"gamma\": \"scale\", \"kernel\": \"rbf\"}": 1,
+      "{\"C\": 10.0, \"epsilon\": 0.05, \"gamma\": 0.3, \"kernel\": \"rbf\"}": 1,
+      "{\"C\": 10.0, \"epsilon\": 0.1, \"gamma\": \"scale\", \"kernel\": \"rbf\"}": 2,
+      "{\"C\": 30.0, \"epsilon\": 0.2, \"gamma\": 0.3, \"kernel\": \"rbf\"}": 1,
+      "{\"C\": 3.0, \"epsilon\": 0.1, \"gamma\": \"scale\", \"kernel\": \"rbf\"}": 1
+    },
+    "prediction_interval": {
+      "method": "CV-based empirical absolute-residual reference interval; independent 95% predictive coverage has not been established.",
+      "half_width": 1.3152145166409759,
+      "calibration_rank": 44,
+      "calibration_n": 45
+    },
+    "physics_constraints": {
+      "signed_target": "DeltaV is fitted directly with its sign; absolute DeltaV is not the regression target.",
+      "descriptor_interpretation": "Ravg, PhiTM and DeltaXNa are mechanism-linked descriptors; the fitted RBF model is not globally monotonic."
+    }
+  },
+  "validation_protocol": {
+    "population_rule": "The dataset used in this study comprises the 45 literature records in Supplementary Table 5. All 45 records are used in model development and evaluation.",
+    "model_selection_rule": "All reported cross-validation results use the fixed 45-row literature dataset.",
+    "scope_warning": "Cross-validation metrics describe this fixed dataset and are not independent external-validation estimates for unseen materials.",
+    "no_absolute_target": "DeltaV is fitted with its sign; absolute values are not used for fitting or hyperparameter selection.",
+    "global_direction_warning": "The RBF-SVR is a predictive model and is not constrained to obey global monotonicity."
+  },
+  "data_quality": {
+    "training_rows": 45,
+    "DeltaXNa_recalculated_from_formula_and_Qch": true
+  },
+  "current_publication_dataset": {
+    "file": "Supplementary Table 5.xlsx",
+    "sha256": "62a71e98a304ca8bdf68dbfb9b50f69e7777ea05b5719469b0371df910b7fab4",
+    "n": 45
+  }
+}

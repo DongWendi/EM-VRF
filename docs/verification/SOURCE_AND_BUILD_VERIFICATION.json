@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-09",
+  "main_py_sha256": "788df0e33f1a619299d19aaa590296ece94f6157f6beb96c8eb85e4a1427863e",
+  "executable": {
+    "file": "EM-VRF Desktop.exe",
+    "sha256": "27ffe3a17a2ac4470d5638437a348b39f7877f70a4b002734433576ee3badd56",
+    "embeds_main_py": true,
+    "built_with": "tools/build_exe.py build (Python 3.10.9)",
+    "template": {
+      "version": "2026.10.03-full-precision-r3",
+      "sha256": "fad96fff7c93024c09ad46469ef32a0b36d7a9db5b359a02b3ca4ea4003efe82"
+    },
+    "pyinstaller_bootloader_runtime_option_and_library_archive_unchanged_from_template": true
+  },
+  "source_provenance": {
+    "original_application_section": "main.py begins with the original application source. With only its entry guard renamed (as in the r3 build), that source compiles to code identical to the application code embedded in the r3 executable.",
+    "original_source_compiles_to_r3_code": true,
+    "main_py_contains_original_section": true,
+    "precision_section_identical_to_precision_revision_full_precision_patch_py": true,
+    "precision_patch_compiles_to_r3_code": true
+  },
+  "behaviour_compared_with_r3_executable": {
+    "outputs_identical": {
+      "selftest": true,
+      "predict_qch": true,
+      "predict_dx": true,
+      "predict_ce": true,
+      "predict_p2": true,
+      "smoke": true,
+      "gui_self_check_json": true
+    },
+    "commands": {
+      "selftest": "--self-test",
+      "predict_qch": "--predict Na0.92Ni0.4Mn0.4Al0.05Ti0.1Li0.03Sb0.02O2 --qch 149.24",
+      "predict_dx": "--predict NaNi0.4Mn0.4Al0.06Ti0.04Li0.06Sb0.04O2 --delta-x-na 0.61",
+      "predict_ce": "--predict Na0.92Ni0.4Mn0.38Ce0.02Al0.05Ti0.1Li0.03Sb0.02O2 --qch 149.24",
+      "predict_p2": "--predict Na5/6Li5/18Mn13/18O2 --delta-x-na 0.5 (phase gate blocks)",
+      "smoke": "--gui-smoke-test",
+      "gui_self_check_json": "--gui-snapshot (built-in GUI checks: formula/mode switching, precision, Element Designer, input guards, batch import/export)"
+    },
+    "python_main_py_self_test_identical_to_r3": true
+  },
+  "training_reproduction": {
+    "script": "train_model.py --full-validation",
+    "environment": {
+      "python": "3.10.9",
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "scipy": "1.15.3",
+      "scikit_learn": "1.7.2"
+    },
+    "fixed_cv_20x5_difference_from_model_meta": {
+      "R2": 0.0,
+      "RMSE": 0.0,
+      "MAE": 0.0,
+      "Pearson_r": 0.0
+    },
+    "nested_cv_10x5_difference_from_model_meta": {
+      "R2": 0.0,
+      "RMSE": 0.0,
+      "MAE": 0.0,
+      "Pearson_r": 0.0
+    },
+    "seed_sensitivity_max_difference_from_model_meta": 0.0,
+    "max_prediction_difference_from_shipped_model": 0.0,
+    "full_report": "training_report.json"
+  },
+  "interface": "Light and dark rendering, the comparison Table/Chart switch and runtime theme switching were inspected; see docs/screenshots.",
+  "scope": "Targeted checks; not exhaustive interaction testing and not an independent validation of the model."
+}
